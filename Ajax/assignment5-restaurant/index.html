@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metropolia Student Restaurants</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Metropolia Student Restaurants</h1>
+        <p>Explore daily menus from your favorite restaurants</p>
+      </header>
+
+      <div id="errorMessage" class="error-message"></div>
+      <div id="loading" class="loading">Loading restaurants...</div>
+      <div id="restaurantsContainer" class="restaurants-grid"></div>
+    </div>
+
+    <!-- Modal for restaurant details and menu -->
+    <div id="restaurantModal" class="modal">
+      <div class="modal-content">
+        <button class="close-btn" onclick="closeModal()">×</button>
+        <h2 id="modalTitle"></h2>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
